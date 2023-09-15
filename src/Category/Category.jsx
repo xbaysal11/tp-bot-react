@@ -3,6 +3,7 @@ import { Link, useParams, useLocation } from "react-router-dom";
 import { ref, get, child } from "firebase/database";
 
 import db from "../firebase";
+import "./Category.css";
 
 export default function Category() {
   const { lang } = useParams();
@@ -27,17 +28,20 @@ export default function Category() {
   });
 
   return (
-    <div>
+    <div className="categories">
       {lang}
       <div>Category </div>
-      {categories?.map((category) => (
-        <Link
-          to={`${location.pathname}/category/${category?.id}`}
-          key={category?.id}
-        >
-          {category?.name}
-        </Link>
-      ))}
+      <div className="categoriesList">
+        {categories?.map((category) => (
+          <Link
+            to={`${location.pathname}/category/${category?.id}`}
+            key={category?.id}
+            className="category"
+          >
+            <div>{category?.name}</div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

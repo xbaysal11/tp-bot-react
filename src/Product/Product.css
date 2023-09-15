@@ -1,0 +1,21 @@
+.products {
+    background: var(--tg-theme-secondary-bg-color);
+}
+
+.back-button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color)
+}
+
+.product {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: var(--tg-theme-bg-color);
+    color: var(--tg-theme-text-color)
+}
