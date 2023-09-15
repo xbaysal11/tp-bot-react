@@ -26,7 +26,7 @@ export default function Product() {
 
   useEffect(() => {
     getProducts();
-  }, [lang, categoryId]);
+  });
 
   return (
     <div>

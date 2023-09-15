@@ -24,7 +24,7 @@ export default function Category() {
 
   useEffect(() => {
     getCategories();
-  }, [lang]);
+  });
 
   return (
     <div>
