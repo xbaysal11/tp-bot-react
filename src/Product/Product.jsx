@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { ref, get, child } from "firebase/database";
 
 import db from "../firebase";
-import "./Product.css"
+import "./Product.css";
 
 export default function Product() {
   const { lang, categoryId } = useParams();
@@ -31,15 +31,18 @@ export default function Product() {
 
   return (
     <div className="products">
-      <Link to={`/${lang}`} className="back-button">
-        <button>back</button>
+      <Link to={`/${lang}`} className="back-link">
+        <button className="back-button">{lang=== "ru" ? "Назад": "Артка"}</button>
       </Link>
       <div>{lang}</div>
-      {products?.map((i) => (
-        <div key={i?.id} className="product">
-          {i?.name}
-        </div>
-      ))}
+      <div className="products-list">
+        {products?.map((i) => (
+          <div key={i?.id} className="product">
+            <img src={i.imageUrl} alt="product" />
+            {i?.name}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

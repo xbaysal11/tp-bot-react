@@ -29,8 +29,7 @@ export default function Category() {
 
   return (
     <div className="categories">
-      {lang}
-      <div>Category </div>
+      <div>{lang === "ru" ? "Выберите" : "Тандаңыз"}</div>
       <div className="categoriesList">
         {categories?.map((category) => (
           <Link
