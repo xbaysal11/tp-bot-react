@@ -1,7 +1,11 @@
+body {
+    margin: 0;
+}
+
 .categories {
     background: var(--tg-theme-secondary-bg-color);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .categories-list {
@@ -10,6 +14,7 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 15px;
+    height: 100%;
 }
 
 .category {
