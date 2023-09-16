@@ -25,9 +25,8 @@ export default function Product() {
       .catch((error) => console.log(error));
   };
   const imageUrl = (url) => {
-    const loc = new URL(url);
     const link =
-      loc?.hostname === "drive.google.com"
+      url?.split("/")?.[2] === "drive.google.com"
         ? `https://drive.google.com/uc?export=view&id=${url?.split("/")?.[5]}`
         : url;
     return link;
@@ -45,7 +44,7 @@ export default function Product() {
           {lang === "kg" ? "Артка" : "Назад"}
         </button>
       </Link>
-      <div className={products?.length > 0 ? "products-list": ""}>
+      <div className={products?.length > 0 ? "products-list" : ""}>
         {products?.length > 0 ? (
           products?.map((i) => (
             <div key={i?.id} className="product">
