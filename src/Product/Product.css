@@ -62,8 +62,10 @@
 .text-medium {
     font-size: 1;
 }
-.text-center{
+
+.text-center {
     width: 100%;
     height: 100px;
     margin: 0 auto;
+    color: var(--tg-theme-text-color);
 }
