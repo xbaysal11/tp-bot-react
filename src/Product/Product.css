@@ -45,3 +45,18 @@
     height: 100px;
     margin: 0 auto;
 }
+
+.label-text {
+    color: var(--tg-theme-hint-color);
+    
+}
+
+.text-ultra{
+    font-size: 0.7em;
+}
+.text-small{
+    font-size: 0.85em;
+}
+.text-medium{
+    font-size: 1;
+}

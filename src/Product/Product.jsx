@@ -32,14 +32,36 @@ export default function Product() {
   return (
     <div className="products">
       <Link to={`/${lang}`} className="back-link">
-        <button className="back-button">{lang=== "ru" ? "Назад": "Артка"}</button>
+        <button className="back-button">
+          {lang === "kg" ? "Артка" : "Назад"}
+        </button>
       </Link>
-      <div>{lang}</div>
       <div className="products-list">
         {products?.map((i) => (
           <div key={i?.id} className="product">
             <img src={i.imageUrl} alt="product" />
-            {i?.name}
+            <div  className="">
+              <span className="label-text text-ultra">{"Артикул: "}</span>
+              <span className="text-small">{i?.id}</span>
+            </div>
+            <div>
+              <span className="label-text text-ultra">
+                {lang === "kg" ? "Аталышы: " : "Название: "}
+              </span>
+              <b>{i?.name}</b>
+            </div>
+            <div className="">
+              <span className="label-text text-ultra">
+                {lang === "kg" ? "Өлкө: " : "Страна: "}
+              </span>
+              <span className="text-small">{i?.production}</span>
+            </div>
+            <div className="">
+              <span className="label-text text-ultra">
+                {lang === "kg" ? "Аныктама: " : "Описание: "}
+              </span>
+              <span className="text-small"><i>{i?.description}</i></span>
+            </div>
           </div>
         ))}
       </div>
