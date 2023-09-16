@@ -66,12 +66,10 @@ export default function Product() {
             </div>
           ))
         ) : (
-          <div className="product">
-            <div className="">
-              <span className="text-small">
-                {lang === "kg" ? "Тизме бош 🌞" : "Cписок пустой 🌞"}
-              </span>
-            </div>
+          <div className="text-center">
+            <span className="text-small">
+              {lang === "kg" ? "Тизме бош 🌞" : "Cписок пустой 🌞"}
+            </span>
           </div>
         )}
       </div>
