@@ -1,4 +1,4 @@
-body {
+/* body {
     margin: 0;
     background: var(--tg-theme-secondary-bg-color);
     font-family: sans-serif;
@@ -76,4 +76,4 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
-}
+} */
