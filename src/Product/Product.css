@@ -43,6 +43,7 @@ body {
     flex-direction: column;
     background: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
+    border-radius: 10px 10px 10px 10px;
 }
 
 .product img {
