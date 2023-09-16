@@ -1,12 +1,16 @@
-/* body {
+html {
+    --tg-viewport-height: auto;
+    --tg-viewport-stable-height: auto;
+}
+
+body {
     margin: 0;
     background: var(--tg-theme-secondary-bg-color);
     font-family: sans-serif;
     font-size: 14px;
 }
 
-.categories {
-}
+.categories {}
 
 .categories-list {
     display: flex;
@@ -28,4 +32,4 @@
     background: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
     border-radius: 10px 10px 10px 10px;
-} */
+}
