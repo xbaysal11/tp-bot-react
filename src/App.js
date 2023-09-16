@@ -3,10 +3,10 @@
 // import Product from "./Product/Product";
 import { useEffect } from "react";
 function App() {
+  const tg = window.Telegram.WebApp;
   useEffect(() => {
-    const tg = window.Telegram.WebApp;
     tg.ready();
-  }, []);
+  });
   return (
     <div className="App">
       wetqetw
