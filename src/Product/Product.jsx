@@ -37,7 +37,7 @@ export default function Product() {
         </button>
       </Link>
       <div className="products-list">
-        {products ? (
+        {products.length > 0 ? (
           products.map((i) => (
             <div key={i?.id} className="product">
               <img src={i.imageUrl} alt="product" />

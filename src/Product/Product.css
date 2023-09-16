@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    margin: 15px;
+    padding: 15px;
 }
 
 .back-button {
