@@ -9,7 +9,7 @@ export default function Product() {
   const { lang, categoryId } = useParams();
   const [products, setProducts] = useState([]);
 
-  const getProducts = () => {
+  const getProducts = (lang, categoryId) => {
     get(child(ref(db), `${lang}/products`))
       .then((snapshot) => {
         if (snapshot?.exists()) {
@@ -35,9 +35,8 @@ export default function Product() {
 
   useEffect(() => {
     console.log("product");
-
-    getProducts();
-  });
+    lang && categoryId && getProducts(lang, categoryId);
+  }, [lang, categoryId]);
 
   return (
     <div className="products">

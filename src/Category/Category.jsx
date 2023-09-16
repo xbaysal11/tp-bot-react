@@ -11,7 +11,7 @@ export default function Category() {
 
   const [categories, setCategories] = useState([]);
 
-  const getCategories = () => {
+  const getCategories = (lang) => {
     get(child(ref(db), `${lang}/categories`))
       .then((snapshot) => {
         if (snapshot?.exists()) {
@@ -25,8 +25,8 @@ export default function Category() {
 
   useEffect(() => {
     console.log("category");
-    getCategories();
-  });
+    getCategories(lang);
+  }, [lang]);
 
   return (
     <div className="categories">
