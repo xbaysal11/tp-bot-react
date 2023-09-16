@@ -22,7 +22,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     padding: 15px;
-    width: 170px;
+    width: 280px;
     display: flex;
     flex-direction: column;
     background: var(--tg-theme-bg-color);
