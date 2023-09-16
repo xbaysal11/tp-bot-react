@@ -24,6 +24,14 @@ export default function Product() {
       })
       .catch((error) => console.log(error));
   };
+  const imageUrl = (url) => {
+    const loc = new URL(url);
+    const link =
+      loc.hostname === "drive.google.com"
+        ? `https://drive.google.com/uc?export=view&id=${url.split("/")?.[5]}`
+        : url;
+    return link;
+  };
 
   useEffect(() => {
     getProducts();
@@ -40,7 +48,7 @@ export default function Product() {
         {products.length > 0 ? (
           products.map((i) => (
             <div key={i?.id} className="product">
-              <img src={i.imageUrl} alt="product" />
+              <img src={imageUrl(i.imageUrl)} alt="product" />
               <div className="">
                 <span className="label-text text-ultra">{"Артикул: "}</span>
                 <span className="text-small">{i?.id}</span>
