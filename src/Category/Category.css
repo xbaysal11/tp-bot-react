@@ -4,7 +4,7 @@
     height: 100%;
 }
 
-.categoriesList {
+.categories-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,7 +14,11 @@
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 10px 15px;
+    text-decoration: none;
+    padding: 15px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
     background: var(--tg-theme-bg-color);
-    color: var(--tg-theme-text-color)
+    color: var(--tg-theme-text-color);
 }

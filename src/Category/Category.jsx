@@ -29,8 +29,7 @@ export default function Category() {
 
   return (
     <div className="categories">
-      <div>{lang === "kg" ? "Тандаңыз" : "Выберите"}</div>
-      <div className="categoriesList">
+      <div className="categories-list">
         {categories?.map((category) => (
           <Link
             to={`${location.pathname}/category/${category?.id}`}

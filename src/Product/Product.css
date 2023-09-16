@@ -2,8 +2,6 @@
     background: var(--tg-theme-secondary-bg-color);
     width: 100%;
     height: 100%;
-
-
 }
 
 .products-list {
@@ -25,6 +23,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .product {
@@ -37,7 +36,6 @@
     flex-direction: column;
     background: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
-    border-radius: 50px 50px 50px 50px;
 }
 
 .product img {
@@ -48,15 +46,17 @@
 
 .label-text {
     color: var(--tg-theme-hint-color);
-    
+
 }
 
-.text-ultra{
+.text-ultra {
     font-size: 0.7em;
 }
-.text-small{
+
+.text-small {
     font-size: 0.85em;
 }
-.text-medium{
+
+.text-medium {
     font-size: 1;
 }

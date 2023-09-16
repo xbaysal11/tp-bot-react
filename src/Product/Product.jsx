@@ -40,7 +40,7 @@ export default function Product() {
         {products?.map((i) => (
           <div key={i?.id} className="product">
             <img src={i.imageUrl} alt="product" />
-            <div  className="">
+            <div className="">
               <span className="label-text text-ultra">{"Артикул: "}</span>
               <span className="text-small">{i?.id}</span>
             </div>
@@ -60,7 +60,7 @@ export default function Product() {
               <span className="label-text text-ultra">
                 {lang === "kg" ? "Аныктама: " : "Описание: "}
               </span>
-              <span className="text-small"><i>{i?.description}</i></span>
+              <span className="text-small">{i?.description}</span>
             </div>
           </div>
         ))}
