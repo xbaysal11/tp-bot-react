@@ -36,7 +36,7 @@ export default function Product() {
           {lang === "kg" ? "Артка" : "Назад"}
         </button>
       </Link>
-      <div className="products-list">
+      <div className={products.length > 0 && "products-list"}>
         {products.length > 0 ? (
           products.map((i) => (
             <div key={i?.id} className="product">
