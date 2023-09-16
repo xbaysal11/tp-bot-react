@@ -34,6 +34,8 @@ export default function Product() {
   };
 
   useEffect(() => {
+    console.log("product");
+
     getProducts();
   });
 

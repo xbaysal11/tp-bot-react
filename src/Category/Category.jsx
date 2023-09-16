@@ -24,6 +24,7 @@ export default function Category() {
   };
 
   useEffect(() => {
+    console.log("category");
     getCategories();
   });
 
