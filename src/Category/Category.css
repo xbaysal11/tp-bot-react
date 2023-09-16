@@ -1,6 +1,7 @@
 body {
     margin: 0;
     background: var(--tg-theme-secondary-bg-color);
+    font-family: sans-serif;
 }
 
 .categories {
