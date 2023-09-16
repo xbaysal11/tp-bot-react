@@ -37,33 +37,43 @@ export default function Product() {
         </button>
       </Link>
       <div className="products-list">
-        {products?.map((i) => (
-          <div key={i?.id} className="product">
-            <img src={i.imageUrl} alt="product" />
-            <div className="">
-              <span className="label-text text-ultra">{"Артикул: "}</span>
-              <span className="text-small">{i?.id}</span>
+        {products ? (
+          products.map((i) => (
+            <div key={i?.id} className="product">
+              <img src={i.imageUrl} alt="product" />
+              <div className="">
+                <span className="label-text text-ultra">{"Артикул: "}</span>
+                <span className="text-small">{i?.id}</span>
+              </div>
+              <div>
+                <span className="label-text text-ultra">
+                  {lang === "kg" ? "Аталышы: " : "Название: "}
+                </span>
+                <b>{i?.name}</b>
+              </div>
+              <div className="">
+                <span className="label-text text-ultra">
+                  {lang === "kg" ? "Өлкө: " : "Страна: "}
+                </span>
+                <span className="text-small">{i?.production}</span>
+              </div>
+              <div className="">
+                <span className="label-text text-ultra">
+                  {lang === "kg" ? "Аныктама: " : "Описание: "}
+                </span>
+                <span className="text-small">{i?.description}</span>
+              </div>
             </div>
-            <div>
-              <span className="label-text text-ultra">
-                {lang === "kg" ? "Аталышы: " : "Название: "}
-              </span>
-              <b>{i?.name}</b>
-            </div>
+          ))
+        ) : (
+          <div className="product">
             <div className="">
-              <span className="label-text text-ultra">
-                {lang === "kg" ? "Өлкө: " : "Страна: "}
+              <span className="text-small">
+                {lang === "kg" ? "Тизме бош 🌞" : "Cписок пустой 🌞"}
               </span>
-              <span className="text-small">{i?.production}</span>
-            </div>
-            <div className="">
-              <span className="label-text text-ultra">
-                {lang === "kg" ? "Аныктама: " : "Описание: "}
-              </span>
-              <span className="text-small">{i?.description}</span>
             </div>
           </div>
-        ))}
+        )}
       </div>
     </div>
   );
