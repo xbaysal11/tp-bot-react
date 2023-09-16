@@ -14,8 +14,8 @@ export default function Category() {
   const getCategories = () => {
     get(child(ref(db), `${lang}/categories`))
       .then((snapshot) => {
-        if (snapshot.exists()) {
-          setCategories(snapshot.val());
+        if (snapshot?.exists()) {
+          setCategories(snapshot?.val());
         } else {
           console.log("no data");
         }
@@ -30,15 +30,16 @@ export default function Category() {
   return (
     <div className="categories">
       <div className="categories-list">
-        {categories?.map((category) => (
-          <Link
-            to={`${location.pathname}/category/${category?.id}`}
-            key={category?.id}
-            className="category"
-          >
-            <div>{category?.name}</div>
-          </Link>
-        ))}
+        {categories?.length > 0 &&
+          categories?.map((category) => (
+            <Link
+              to={`${location?.pathname}/category/${category?.id}`}
+              key={category?.id}
+              className="category"
+            >
+              <div>{category?.name}</div>
+            </Link>
+          ))}
       </div>
     </div>
   );

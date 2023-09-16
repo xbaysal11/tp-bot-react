@@ -12,11 +12,11 @@ export default function Product() {
   const getProducts = () => {
     get(child(ref(db), `${lang}/products`))
       .then((snapshot) => {
-        if (snapshot.exists()) {
+        if (snapshot?.exists()) {
           setProducts(
             snapshot
-              .val()
-              ?.filter((i) => String(i.categoryId) === String(categoryId))
+              ?.val()
+              ?.filter((i) => String(i?.categoryId) === String(categoryId))
           );
         } else {
           console.log("no data");
@@ -27,8 +27,8 @@ export default function Product() {
   const imageUrl = (url) => {
     const loc = new URL(url);
     const link =
-      loc.hostname === "drive.google.com"
-        ? `https://drive.google.com/uc?export=view&id=${url.split("/")?.[5]}`
+      loc?.hostname === "drive.google.com"
+        ? `https://drive.google.com/uc?export=view&id=${url?.split("/")?.[5]}`
         : url;
     return link;
   };
@@ -44,11 +44,11 @@ export default function Product() {
           {lang === "kg" ? "Артка" : "Назад"}
         </button>
       </Link>
-      <div className={products.length > 0 && "products-list"}>
-        {products.length > 0 ? (
-          products.map((i) => (
+      <div className={products?.length > 0 && "products-list"}>
+        {products?.length > 0 ? (
+          products?.map((i) => (
             <div key={i?.id} className="product">
-              <img src={imageUrl(i.imageUrl)} alt="product" />
+              <img src={imageUrl(i?.imageUrl)} alt="product" />
               <div className="">
                 <span className="label-text text-ultra">{"Артикул: "}</span>
                 <span className="text-small">{i?.id}</span>
