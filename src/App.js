@@ -2,11 +2,15 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Category from "./Category/Category";
 import Product from "./Product/Product";
 import { useEffect } from "react";
+
 const tg = window.Telegram.WebApp;
+
 function App() {
+
   useEffect(() => {
     tg.ready();
   });
+  
   return (
     <div className="App">
       <Routes>
