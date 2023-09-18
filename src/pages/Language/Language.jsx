@@ -13,6 +13,9 @@ export default function Language() {
           <img src={Logo} alt="logo" />
         </div>
         <div className="welcome-text">
+        <b>
+            <h1>TOP PARTNERS</h1>
+          </b>
           <b>
             <p>Добро пожаловать!</p>
           </b>
