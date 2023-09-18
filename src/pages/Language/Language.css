@@ -13,10 +13,10 @@ body {
 .languages {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     align-items: center;
     justify-content: center;
-    margin-top: 35px;
+    margin: 35px;
 }
 
 .languages-list {
