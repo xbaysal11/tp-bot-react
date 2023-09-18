@@ -24,7 +24,6 @@ body {
     gap: 15px;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 15px;
 }
 
 .language {
@@ -51,7 +50,7 @@ body {
 }
 
 .welcome-image {
-    max-width: 260px;
+    max-width: 200px;
 }
 
 .welcome-image img {
