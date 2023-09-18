@@ -10,7 +10,13 @@ body {
     font-size: 14px;
 }
 
-.languages {}
+.languages {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
 
 .languages-list {
     display: flex;
@@ -32,4 +38,23 @@ body {
     background: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
     border-radius: 10px 10px 10px 10px;
+    text-align: center;
 }
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-image {
+    max-width: 280px;
+}
+.welcome-image img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+} 
+.welcome-text {}

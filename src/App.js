@@ -1,9 +1,9 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 import { useEffect } from "react";
 
-import Category from "./Category/Category";
-import Product from "./Product/Product";
-import Language from "./Language/Language";
+import Category from "./pages/Category/Category";
+import Product from "./pages/Product/Product";
+import Language from "./pages/Language/Language";
 
 const tg = window.Telegram.WebApp;
 

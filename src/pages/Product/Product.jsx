@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ref, get, child } from "firebase/database";
 
-import db from "../firebase";
+import db from "../../firebase";
 import "./Product.css";
 
 export default function Product() {
