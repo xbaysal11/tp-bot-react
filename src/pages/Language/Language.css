@@ -16,6 +16,7 @@ body {
     gap: 30px;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .languages-list {
@@ -50,11 +51,15 @@ body {
 }
 
 .welcome-image {
-    max-width: 280px;
+    max-width: 260px;
 }
-.welcome-image img{
+
+.welcome-image img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-} 
-.welcome-text {}
+}
+
+.welcome-text {
+    color: var(--tg-theme-text-color);
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Language.css";
-import Logo from "../../assets/images/logo.jpg";
+import Logo from "../../assets/images/logo.png";
 
 export default function Language() {
   const currentUrl = window?.location?.origin;
@@ -13,7 +13,9 @@ export default function Language() {
           <img src={Logo} alt="logo" />
         </div>
         <div className="welcome-text">
-          <p>Добро пожаловать!</p>
+          <b>
+            <p>Добро пожаловать!</p>
+          </b>
         </div>
       </div>
       <div className="languages-list">
