@@ -16,7 +16,7 @@ body {
     gap: 30px;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 35px;
 }
 
 .languages-list {
@@ -44,13 +44,13 @@ body {
 .welcome {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
     align-items: center;
     justify-content: center;
 }
 
 .welcome-image {
-    max-width: 200px;
+    max-width: 160px;
 }
 
 .welcome-image img {
