@@ -10,9 +10,9 @@ body {
     font-size: 14px;
 }
 
-.categories {}
+.languages {}
 
-.categories-list {
+.languages-list {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
@@ -20,7 +20,7 @@ body {
     padding: 15px;
 }
 
-.category {
+.language {
     border: none;
     outline: none;
     cursor: pointer;

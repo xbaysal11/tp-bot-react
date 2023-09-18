@@ -1,13 +1,10 @@
 {
   "files": {
-    "main.css": "/tp-bot-react/static/css/main.1ba9e104.css",
-    "main.js": "/tp-bot-react/static/js/main.3ce408fa.js",
+    "main.js": "/tp-bot-react/static/js/main.16c9ac03.js",
     "index.html": "/tp-bot-react/index.html",
-    "main.1ba9e104.css.map": "/tp-bot-react/static/css/main.1ba9e104.css.map",
-    "main.3ce408fa.js.map": "/tp-bot-react/static/js/main.3ce408fa.js.map"
+    "main.16c9ac03.js.map": "/tp-bot-react/static/js/main.16c9ac03.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ba9e104.css",
-    "static/js/main.3ce408fa.js"
+    "static/js/main.16c9ac03.js"
   ]
 }
