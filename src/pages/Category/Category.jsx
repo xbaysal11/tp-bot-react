@@ -42,7 +42,7 @@ export default function Category() {
               key={category?.id}
               className="category"
             >
-              <div>{category?.name}</div>
+              <div><b>{category?.name}</b></div>
             </Link>
           ))}
       </div>
