@@ -1,4 +1,4 @@
-html {
+/* html {
     --tg-viewport-height: auto;
     --tg-viewport-stable-height: auto;
 }
@@ -32,4 +32,4 @@ body {
     background: var(--tg-theme-bg-color);
     color: var(--tg-theme-text-color);
     border-radius: 10px 10px 10px 10px;
-}
+} */
