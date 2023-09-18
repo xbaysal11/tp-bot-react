@@ -14,10 +14,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route index path="/" element={<Language />} />
+        <Route path="/" element={<Language />} />
         <Route path="/:lang" element={<Category />} />
         <Route path={"/:lang/category/:categoryId"} element={<Product />} />
-        <Route element={<Navigate to="/" replace />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </>
   );

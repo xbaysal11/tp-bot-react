@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { ref, get, child } from "firebase/database";
 
 import db from "../firebase";
@@ -7,9 +7,9 @@ import "./Category.css";
 
 export default function Category() {
   const { lang } = useParams();
-  const location = useLocation();
 
   const [categories, setCategories] = useState([]);
+  const currentUrl = window?.location?.href;
 
   const getCategories = (lang) => {
     get(child(ref(db), `${lang}/categories`))
@@ -24,7 +24,6 @@ export default function Category() {
   };
 
   useEffect(() => {
-    console.log("category");
     getCategories(lang);
   }, [lang]);
 
@@ -34,7 +33,7 @@ export default function Category() {
         {categories?.length > 0 &&
           categories?.map((category) => (
             <Link
-              to={`${location?.pathname}/category/${category?.id}`}
+              to={`${currentUrl}/category/${category?.id}`}
               key={category?.id}
               className="category"
             >

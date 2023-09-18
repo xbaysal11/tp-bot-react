@@ -33,7 +33,6 @@ export default function Product() {
   };
 
   useEffect(() => {
-    console.log("product");
     lang && categoryId && getProducts(lang, categoryId);
   }, [lang, categoryId]);
 

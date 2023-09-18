@@ -1,17 +1,17 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Language.css";
 
 export default function Language() {
-  const location = useLocation();
+  const currentUrl = window?.location?.origin;
 
   return (
     <div className="languages">
       <div className="languages-list">
-        <Link to={`${location?.pathname}/ru`} className="language">
+        <Link to={`${currentUrl}/ru`} className="language">
           <div>Русский 🇷🇺</div>
         </Link>
-        <Link to={`${location?.pathname}/kg`} className="language">
+        <Link to={`${currentUrl}/kg`} className="language">
           <div>Кыргызча 🇰🇬</div>
         </Link>
       </div>
